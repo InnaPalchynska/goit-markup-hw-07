@@ -97,6 +97,10 @@ img {
   padding-bottom: 94px;
 }
 
+.heading {
+  margin-bottom: 50px;
+}
+
 /* logo */
 
 .logo {
@@ -210,14 +214,13 @@ img {
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   margin-left: auto;
   margin-right: auto;
-  display: block;
   max-width: 696px;
 }
 
-.hero .button {
+.hero__button {
   display: block;
   margin-top: 30px;
   margin-left: auto;
@@ -252,16 +255,16 @@ img {
   line-height: 1.71;
 }
 
-.features.list {
+.features__list {
   display: flex;
   align-items: center;
 }
 
-.features.item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-icon {
+.features__icon {
   display: flex;
   width: 270px;
   height: 120px;
@@ -270,11 +273,11 @@ img {
   margin-bottom: 30px;
 }
 
-.features-icon .icon {
+.feature__icon .icon {
   margin: auto;
 }
 
-.features .title {
+.features__title {
   margin-bottom: 10px;
   font-size: inherit;
   font-weight: 700;
@@ -283,7 +286,7 @@ img {
   color: var(--title-text-color);
 }
 
-.features .description {
+.features__description {
   margin-top: 0px;
 }
 
@@ -293,12 +296,12 @@ img {
   padding-bottom: 94px;
 }
 
-.work.list {
+.work__list {
   margin-top: 50px;
   display: flex;
 }
 
-.work.item {
+.work__item {
   position: relative;
   margin-left: auto;
   margin-right: 30px;
@@ -312,14 +315,14 @@ img {
   width: 100%;
 }
 
-.work .overlay {
+.work__overlay {
   display: inline-flex;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   align-items: center;
 }
 
-.work-description {
+.work__description {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -339,15 +342,11 @@ img {
   text-align: center;
 }
 
-.heading {
-  margin-bottom: 50px;
-}
-
-.team.list {
+.team__list {
   display: flex;
 }
 
-.team-item {
+.team__item {
   margin-left: auto;
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -355,19 +354,19 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-left: auto;
   margin-right: 30px;
 }
 
-.team-title {
+.team__title {
   margin-top: 30px;
   background-color: transparent;
   font-weight: 500;
   color: var(--title-text-color);
 }
 
-.team-description {
+.team__description {
   margin: 10px auto 16px;
 }
 
@@ -377,7 +376,7 @@ img {
   justify-content: center;
 }
 
-.social .link {
+.social__link {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -389,17 +388,17 @@ img {
   transition-timing-function: var(--animation-timing-function);
 }
 
-.social .link:hover,
-.social .link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
 
-.social > li:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social .icon {
+.social__icon {
   height: 20px;
   width: 20px;
 }
@@ -410,7 +409,7 @@ img {
   display: flex;
 }
 
-.client {
+.clients__link {
   display: inline-flex;
   width: 170px;
   height: 90px;
@@ -423,12 +422,12 @@ img {
   transition-timing-function: var(--animation-timing-function);
 }
 
-.clients > li:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client:hover,
-.client:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -445,7 +444,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
 }
 
@@ -453,14 +452,14 @@ img {
   display: block;
 }
 
-.footer.contacts {
+.footer__contacts {
   margin-top: 20px;
   margin-right: 72px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer.contacts > li:not(:last-child) {
+.footer__contact:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -469,12 +468,11 @@ address {
   color: var(--primary-bg-color);
 }
 
-.join {
-  margin-top: 12px;
+.subscription--social {
   margin-right: 93px;
 }
 
-.footer-title {
+.subscription__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -482,11 +480,11 @@ address {
   text-transform: uppercase;
 }
 
-.join .link {
+.social__link--dark {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.join .icon {
+.social__icon--light {
   color: var(--primary-bg-color);
 }
 
@@ -494,7 +492,7 @@ address {
   margin-top: 12px;
 }
 
-.subscription input {
+.subscription__input {
   margin-right: 12px;
   padding-left: 16px;
 
@@ -511,13 +509,13 @@ address {
   border-radius: 4px;
 }
 
-.subscription .button {
+.subscription__button {
   position: relative;
   text-align: start;
   padding-left: 27px;
 }
 
-.subscription .button::after {
+.subscription__button::after {
   position: absolute;
   top: 0;
   right: 28px;
@@ -530,7 +528,7 @@ address {
   background-size: contain;
 }
 
-.subscription input::placeholder {
+.subscription__input::placeholder {
   padding-left: 12px;
 }
 
