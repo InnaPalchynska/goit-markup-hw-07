@@ -1166,7 +1166,7 @@ input[name='agreement']:checked + .checkbox__icon {
   content: ' ';
   width: 24px;
   height: 24px;
-  background-image: url(/images/send.svg);
+  background-image: url(../images/send.svg);
   background-size: contain;
 }
 
