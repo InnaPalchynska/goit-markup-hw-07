@@ -353,18 +353,6 @@ img {
   height: auto;
 }
 
-.link {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -379,14 +367,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.icon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: auto;
-  fill: currentColor;
 }
 
 .section {
@@ -409,6 +389,26 @@ img {
 address {
   font-style: inherit;
   color: #ffffff;
+}
+
+.link, .logo, .site-nav__link, .clients__link, .social__link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-nav, .features__list, .work__list, .clients, .team__list, .social, .filter, .portfolio, .footer__contacts {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon, .site-nav__icon, .social__icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: auto;
+  fill: currentColor;
 }
 
 .header {
@@ -581,7 +581,7 @@ address {
   margin-bottom: 30px;
 }
 
-.features__icon .icon {
+.features__icon .icon, .features__icon .site-nav__icon, .features__icon .social__icon {
   margin: auto;
 }
 
@@ -913,10 +913,6 @@ address {
   line-height: 1.15;
 }
 
-.form__data {
-  margin-bottom: 20px;
-}
-
 .form__label {
   display: block;
   margin-bottom: 10px;
@@ -931,8 +927,8 @@ address {
   margin-bottom: 4px;
 }
 
-.form__input {
-  position: relative;
+.form__data {
+  margin-bottom: 20px;
 }
 
 .form__data input,
@@ -952,12 +948,18 @@ address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__data input:focus + .icon,
-.form__data input:hover + .icon {
+.form__data input:focus + .icon, .form__data input:focus + .site-nav__icon, .form__data input:focus + .social__icon,
+.form__data input:hover + .icon,
+.form__data input:hover + .site-nav__icon,
+.form__data input:hover + .social__icon {
   color: #2196f3;
 }
 
-.form__input .icon {
+.form__input {
+  position: relative;
+}
+
+.form__input .icon, .form__input .site-nav__icon, .form__input .social__icon {
   position: absolute;
   top: 0;
   left: 12px;

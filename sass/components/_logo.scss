@@ -1,4 +1,5 @@
 .logo {
+  @extend .link;
   margin-right: 92px;
 
   font-family: $logo-font-family;

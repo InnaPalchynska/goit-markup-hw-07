@@ -1,9 +1,11 @@
 .social {
+  @extend %list;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
 
   &__link {
+    @extend .link;
     display: inline-flex;
     width: 44px;
     height: 44px;
@@ -26,6 +28,7 @@
   }
 
   &__icon {
+    @extend .icon;
     height: 20px;
     width: 20px;
   }

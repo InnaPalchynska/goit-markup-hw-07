@@ -1,7 +1,9 @@
 .clients {
+  @extend %list;
   display: flex;
 
   &__link {
+    @extend .link;
     display: inline-flex;
     width: 170px;
     height: 90px;

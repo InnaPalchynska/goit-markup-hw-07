@@ -5,6 +5,7 @@
   text-align: center;
 
   &__list {
+    @extend %list;
     display: flex;
   }
 

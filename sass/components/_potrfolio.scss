@@ -1,4 +1,5 @@
 .portfolio {
+  @extend %list;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;

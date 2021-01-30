@@ -9,6 +9,7 @@
   }
 
   &__contacts {
+    @extend %list;
     margin-top: 20px;
     margin-right: 72px;
     line-height: 1.71;

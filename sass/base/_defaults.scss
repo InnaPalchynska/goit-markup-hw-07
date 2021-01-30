@@ -45,18 +45,6 @@ img {
   height: auto;
 }
 
-.link {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -71,12 +59,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.icon {
-  display: inline-flex;
-  margin: auto;
-  fill: currentColor;
 }
 
 .section {
