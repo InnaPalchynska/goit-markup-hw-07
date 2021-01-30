@@ -831,7 +831,7 @@ address {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-image: url(/images/checkbox.svg);
+  background-image: url(../images/checkbox.svg);
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
