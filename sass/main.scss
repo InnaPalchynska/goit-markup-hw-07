@@ -1,8 +1,24 @@
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
-  font-family: var(--primary-font-family);
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
+@import './utils/variables';
+@import '/sass/base/fonts';
+@import './base/defaults';
+@import './components/logo';
+@import './components/header';
+@import './components/navigation';
+@import './components/hero';
+@import './components/button';
+@import './components/features';
+@import './components/work';
+@import './components/team';
+@import './components/social';
+@import './components/clients';
+@import './components/footer';
+@import './components/subscription';
+@import './components/filter';
+@import './components/potrfolio';
+@import './components/project';
+@import './components/thumb';
+@import '/sass/components/form';
+@import '/sass/components/checkbox';
+@import '/sass/components/backdrop';
+@import './components/modal';
+@import './components/input';
